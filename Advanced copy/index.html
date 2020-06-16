@@ -7,29 +7,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="actors.json"></script>
     <style>
         .wrapper {
             padding: 4vw;
         }
 
         .box {
-            border-right: 20px solid white;
             font-size: 1.7em;
+            border: 3px solid black;
+            margin: 0;
         }
 
         ul {
             list-style: none;
         }
 
-        .box_inside {
-            width: 250px;
-            height: 200px;
-            background-color: lightcoral;
-            margin: 20px;
+        .movie {
+            border-left: 10px solid white;
         }
         
         .res {
             font-size: 1.7em;
+        }
+
+        img {
+            width: 350px;
+            height: 400px;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
 
     
@@ -46,9 +52,9 @@
                       Movies
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Avengers: Endgame</a>
+                      <a class="dropdown-item" href="#">Black Panther</a>
+                      <a class="dropdown-item" href="#">Deadpool 2</a>
                     </div>
                 </div>
             </li>
@@ -64,64 +70,87 @@
           </ul>
         </nav>
     </header>
-    <main class="container-fluid wrapper">
+    <section class="container-fluid wrapper">
         <div class="row">
-            <ul class="d-flex flex-column align-items-center col-xs-4 col-sm-3 col-md-3 bg-info box">
-                <li>Actor 1</li>
-                <li>Actor 2</li>
-                <li>Actor 3</li>
-                <li>Actor 4</li>
-                <li>Actor 5</li>
-                <li>Actor 6</li>
-                <li>Actor 7</li>
+            <ul class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-4 box">
+                <li>Robert Downey Jr</li>
+                <li>Chris Evans</li>
+                <li>Chris Hemsworth </li>
+                <li>Brie Larson</li>
+                <li>Jeremy Renner</li>
+                <li>Mark Ruffalo</li>
+                <li>Samuel L. Jackson</li>
             </ul>
-            <div class="d-flex flex-column align-items-center justify-content-center col-xs-8 col-sm-9 col-md-9 bg-dark">
+            <div class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-8 bg-dark movie">
                 <div class="res text-white">
-                    test
                 </div>
-                <div class="box_inside">
-
-                </div>
+                <img src="img/avengersEndgame.jpg" alt="" class="img-thumbnail movie_img">
             </div>
         </div>
-    </main>
-    <main class="container-fluid wrapper movie2">
+    </section>
+    <section class="container-fluid wrapper">
         <div class="row">
-            <ul class="d-flex flex-column align-items-center col-xs-4 col-sm-3 col-md-3 bg-info box">
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 3</li>
-                <li>Test 4</li>
-                <li>Test 5</li>
-                <li>Test 6</li>
-                <li>Test 7</li>
+            <ul class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-4 box">
+                <li>Chadwick Boseman</li>
+                <li>Michael B. Jordan</li>
+                <li>Danai Gurira</li>
+                <li>Lupita Nyong’o</li>
             </ul>
-            <div class="d-flex flex-column align-items-center justify-content-center col-xs-8 col-sm-9 col-md-9 bg-dark">
+            <div class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-8 bg-dark movie">
                 <div class="res text-white">
-                    test
                 </div>
-                <div class="box_inside">
-
-                </div>
+                <img src="img/BlackPanther.png" alt="" class="img-thumbnail movie_img">
             </div>
         </div>
-    </main>
+    </section>
+    <section class="container-fluid wrapper">
+        <div class="row">
+            <ul class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-4 box">
+                <li>Ryan Reynolds</li>
+                <li>Morena Baccarin</li>
+                <li>Ed Skrein</li>
+                <li>T. J. Miller</li>
+            </ul>
+            <div class="d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-8 bg-dark movie">
+                <div class="res text-white">
+                </div>
+                <img src="img/Deadpool.jpg" alt="" class="img-thumbnail movie_img">
+            </div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+    <script> 
 
         let links = $(".box li");
         let output = $(".res");
 
         for (let i = 0; i < links.length; i++) {
+            
             $(links[i]).on("click", () => {
-                output.text($(links[i]).text());  
+                let text_out = $(links[i]).text();
+                $(output).text(text_out);  
             })
         }
-    </script>
+
+        ////////////////////////////////////////////////////////
+
+        let drop = $(".dropdown-item");
+        let movies = $("section");
+        
+        for (let i = 0; i < drop.length; i++) {
+            movies.hide();
+            $(drop[i]).on("click", () => {
+                movies.hide();
+                $(movies[i]).show();
+            })
+
+        }
+
+    </script>   
   </body>
 </html>
